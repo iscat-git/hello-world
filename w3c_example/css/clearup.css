@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form,
+dl,
+dt,
+dd {
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	border-style: none;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
+
+
+/*以上去除标签的默认样式*/

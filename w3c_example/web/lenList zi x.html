@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--此版本使用的是xhtml 1.0 transitional版本，
+	同4.01strict版本的来说，这个在ie浏览器和360浏览器打开后显示一样。-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<title></title>
+		<script type="text/javascript">
+			<!--//--><![CDATA[//><!--
+			startList = function() {
+			if (document.all&&document.getElementById) {
+			navRoot = document.getElementById("box");
+			var allli = navRoot.getElementsByTagName("li")
+			for (i=0; i<allli.length; i++) {
+			node = allli[i];
+			node.onmouseover=function() {
+			this.className+=" current";
+			}
+			node.onmouseout=function() {
+			this.className=this.className.replace(" current", "");
+			}
+			}
+			}
+			}
+			window.onload=startList;
+			//--><!]]>
+		</script>
+		<style type="text/css">
+			body,
+			ul,
+			li,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			p,
+			form,
+			dl,
+			dt,
+			dd {
+				margin: 0px;
+				padding: 0px;
+				font-size: 12px;
+				font-weight: normal;
+			}
+			
+			ul {
+				list-style: none;
+			}
+			
+			img {
+				border-style: none;
+			}
+			/*以上去除标签的默认样式*/
+			a {
+				color: #000000;
+				text-decoration:none;
+
+			}
+			a:hover {
+				color: red;
+			}
+			#box {
+				width: 100px;
+				border: solid 1px #CCC;
+				font-family: verdana;
+				font-size: 12px;
+				line-height: 1.5;
+				margin: 10px auto;
+			}
+			#box ul li {
+				height: 26px;
+				padding: 0px 8px;
+				height: 26px;
+				line-height: 26px;
+				background: #EEE;				
+				border-bottom: solid 1px #CCC;
+				position: relative;
+			}
+			#box ul li ul{
+				display: none;
+				position: absolute;
+				width: 100px;
+				top: 0px;
+				left: 100px;
+				border-bottom: solid 1px #CCC;
+			}
+			#box ul li:hover ul {
+				display: block;
+			}
+			#box ul li.current ul {
+				display: block;
+			}
+			#box ul li:hover {
+				background: #BBB;
+			}
+			#box ul li.current {
+				background: #BBB;
+			}
+			/*#box ul li:hover ul li {
+				background: #BBB;
+			}
+			#box ul li.current ul li {
+				background: #BBB;
+			}*/
+		</style>
+	</head>
+
+	<body>
+		<div id="box">
+			<ul>
+				<li><a href="#">一级菜单1</a>
+					<ul>
+						<li><a href="#">二级菜单01</a></li>
+						<li><a href="#">二级菜单02</a></li>
+						<li><a href="#">二级菜单03</a></li>
+						<li><a href="#">二级菜单04</a></li>
+						<li><a href="#">二级菜单05</a></li>
+					</ul>
+				</li>
+				<li><a href="#">一级菜单2</a>
+					<ul>
+						<li><a href="#">二级菜单06</a></li>
+						<li><a href="#">二级菜单07</a></li>
+						<li><a href="#">二级菜单08</a></li>
+						<li><a href="#">二级菜单09</a></li>
+						<li><a href="#">二级菜单10</a></li>
+					</ul>
+				</li>
+				<li><a href="#">一级菜单3</a>
+					<ul>
+						<li><a href="#">二级菜单11</a></li>
+						<li><a href="#">二级菜单12</a></li>
+						<li><a href="#">二级菜单13</a></li>
+						<li><a href="#">二级菜单14</a></li>
+						<li><a href="#">二级菜单15</a></li>
+					</ul>
+				</li>
+				<li><a href="#">一级菜单4</a>
+					<ul>
+						<li><a href="#">二级菜单16</a></li>
+						<li><a href="#">二级菜单17</a></li>
+						<li><a href="#">二级菜单18</a></li>
+						<li><a href="#">二级菜单19</a></li>
+						<li><a href="#">二级菜单20</a></li>
+					</ul>
+				</li>
+				<li><a href="#">一级菜单5</a>
+					<ul>
+						<li><a href="#">二级菜单21</a></li>
+						<li><a href="#">二级菜单22</a></li>
+						<li><a href="#">二级菜单23</a></li>
+						<li><a href="#">二级菜单24</a></li>
+						<li><a href="#">二级菜单25</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</body>
+
+</html>

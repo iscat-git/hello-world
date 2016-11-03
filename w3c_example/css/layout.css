@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+#container {
+	width: 900px;
+	margin: 0px auto;
+}
+
+#header {
+	height: 70px;	
+	background: #CFC;
+	margin-bottom: 8px;
+}
+
+#nav {
+	height: 30px;
+	background: #CFC;
+	margin-bottom: 8px;
+}
+
+#maincontent {
+	margin-bottom: 8px;
+	overflow: auto;
+	zoom: 1;
+}
+
+#main {
+	float: left;
+	width: 664px;
+	height: 500px;
+	background: #FF9;	
+}
+
+#side {
+	float: right;
+	width: 228px;
+	height: 500px;
+	background: #FF9;
+}
+
+#footer {
+	height: 70px;
+	background: #CFC;
+}
